@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneTap CTF</title>
+    <title>OneTap CTF Team</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65436a56f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Test</h1>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>OneTap</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="writeups">Writeups</a>
+                <a href="#" class="nav-link" data-page="members">Members</a>
+                <a href="#" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/OneTapCTF" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://ctftime.org/team/380187" class="social-link" target="_blank">CTFTIME</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div id="writeups-page" class="page active">
+                <h2 class="page-title">Writeups</h2>
+                <div class="cards-container">
+                    <div class="card writeup-card" data-writeup="tfc-ctf-2025">
+                        <h3>TFC CTF 2025</h3>
+                        <p>A challenging competition with various cryptography and web exploitation challenges.</p>
+                        <hr>
+                        <div class="writeup-info">
+                            <p><strong>Place:</strong> 3rd</p>
+                            <p><strong>Points:</strong> 4578</p>
+                        </div>
+                    </div>
+
+                    <div class="card writeup-card" data-writeup="defcon-ctf-2025">
+                        <h3>DEF CON CTF 2025</h3>
+                        <p>One of the most prestigious CTF competitions with advanced challenges.</p>
+                        <hr>
+                        <div class="writeup-info">
+                            <p><strong>Place:</strong> 12th</p>
+                            <p><strong>Points:</strong> 3856</p>
+                        </div>
+                    </div>
+
+                    <div class="card writeup-card" data-writeup="googlectf-2024">
+                        <h3>Google CTF 2024</h3>
+                        <p>A wide range of challenges from reverse engineering to steganography.</p>
+                        <hr>
+                        <div class="writeup-info">
+                            <p><strong>Place:</strong> 8th</p>
+                            <p><strong>Points:</strong> 5233</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="writeup-detail" class="page">
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Writeups
+                </div>
+                <div id="writeup-content"></div>
+            </div>
+
+            <div id="members-page" class="page">
+                <h2 class="page-title">Team Members</h2>
+                <div class="members-container">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="img/w1ndjal.png" alt="Team Member 1">
+                        </div>
+                        <h3>w1ndjal</h3>
+                        <p>Forensics, steganography, networking & cryptography.</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="/api/placeholder/200/200" alt="Team Member 2">
+                        </div>
+                        <h3>Gulin</h3>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-page" class="page">
+                <h2 class="page-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>adelinionut297@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <p>github.com/OneTapCTF</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-trophy"></i>
+                            <p>https://ctftime.org/team/380187</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
