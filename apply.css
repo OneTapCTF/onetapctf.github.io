@@ -1,0 +1,329 @@
+a {
+    text-decoration: none;
+}
+
+.apply-section {
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+}
+
+.apply-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(0, 191, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(64, 224, 255, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.apply-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.requirements-section {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.03), rgba(64, 224, 255, 0.02));
+    backdrop-filter: blur(15px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.requirements-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #00bfff, #40e0ff, #87ceeb);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease-in-out infinite;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.requirements-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.requirements-list li:last-child {
+    border-bottom: none;
+}
+
+.requirement-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    text-align: center;
+}
+
+.requirement-text {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.application-form {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.03), rgba(64, 224, 255, 0.02));
+    backdrop-filter: blur(15px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #00bfff, #40e0ff, #87ceeb);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease-in-out infinite;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #333;
+    border: 2px solid #555;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #00bfff, #40e0ff, #87ceeb);
+    background-size: 200% 200%;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+.submit-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 191, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .apply-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .requirements-section,
+    .application-form {
+        padding: 1.5rem;
+    }
+    
+    .requirements-title,
+    .form-title {
+        font-size: 1.5rem;
+    }
+    
+    .requirement-text {
+        font-size: 1rem;
+    }
+}/* Recru
+itment Status */
+.recruitment-status {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.05), rgba(64, 224, 255, 0.03));
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 191, 255, 0.03);
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recruitment-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00bfff;
+    margin-bottom: 1.5rem;
+}
+
+.recruitment-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.active-recruitment {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 2px solid transparent;
+    animation: recruitmentPulse 2s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.active-recruitment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.active-recruitment:hover::before {
+    left: 100%;
+}
+
+@keyframes recruitmentPulse {
+    0%, 100% { 
+        box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+        border-color: rgba(255, 107, 107, 0.3);
+    }
+    50% { 
+        box-shadow: 0 0 20px rgba(255, 107, 107, 0.6);
+        border-color: rgba(255, 107, 107, 0.6);
+    }
+}
+
+.recruitment-note {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Tag Colors for recruitment */
+.active-recruitment[data-skill="pwn"] { 
+    background: #ff6b6b; 
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
+}
+.active-recruitment[data-skill="reverse"] { 
+    background: #4ecdc4; 
+    box-shadow: 0 0 15px rgba(78, 205, 196, 0.4);
+}
+.active-recruitment[data-skill="crypto"] { 
+    background: #45b7d1; 
+    box-shadow: 0 0 15px rgba(69, 183, 209, 0.4);
+}
+.active-recruitment[data-skill="forensics"] { 
+    background: #96ceb4; 
+    box-shadow: 0 0 15px rgba(150, 206, 180, 0.4);
+}
+.active-recruitment[data-skill="web"] { 
+    background: #feca57; 
+    color: #333; 
+    box-shadow: 0 0 15px rgba(254, 202, 87, 0.4);
+}
+.active-recruitment[data-skill="network"] { 
+    background: #ff9ff3; 
+    box-shadow: 0 0 15px rgba(255, 159, 243, 0.4);
+}
+.active-recruitment[data-skill="osint"] { 
+    background: #54a0ff; 
+    box-shadow: 0 0 15px rgba(84, 160, 255, 0.4);
+}
+
+/* No recruitment message */
+.no-recruitment {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(100, 100, 100, 0.1), rgba(80, 80, 80, 0.05));
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(100, 100, 100, 0.2);
+    margin-bottom: 3rem;
+}
+
+.no-recruitment .recruitment-title {
+    color: #888;
+}
+
+.no-recruitment .recruitment-note {
+    color: #666;
+}.in
+active-recruitment {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #333;
+    color: #888;
+    border: 2px solid #444;
+}
+
+.no-recruitment .recruitment-tags {
+    opacity: 0.6;
+}

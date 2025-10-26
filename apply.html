@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - OneTap CTF Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html">OneTap</a></h1>
+            <ul class="nav-menu">
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="ctfs.html" class="nav-link">CTFs</a></li>
+                <li><a href="apply.html" class="nav-link active">Apply</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="apply-section">
+        <div class="container">
+            <h2 class="section-title">Join OneTap</h2>
+            <div class="recruitment-status">
+                <h3 class="recruitment-title">Currently Recruiting For:</h3>
+                <!--
+                <div class="recruitment-tags">
+                    <span class="tag active-recruitment" data-skill="pwn">Pwn</span>
+                    <span class="tag active-recruitment" data-skill="web">Web</span>
+                </div>
+            -->
+                
+                
+            </div>
+            <div class="apply-content">
+                <div class="requirements-section">
+                    <h3 class="requirements-title">Nice to have</h3>
+                    <ul class="requirements-list">
+                        <li>
+                            <span class="requirement-icon">🏆</span>
+                            <span class="requirement-text">Top 1% on TryHackMe</span>
+                        </li>
+                        <li>
+                            <span class="requirement-icon">🇷🇴</span>
+                            <span class="requirement-text">Participated in OSC Romania National Competition</span>
+                        </li>
+                        <li>
+                            <span class="requirement-icon">🎯</span>
+                            <span class="requirement-text">Participated in minimum 15 CTF competitions</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="application-form">
+                    <h3 class="form-title">Application Form</h3>
+                    <form id="applicationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Tell us about your achievements and how you meet our requirements</label>
+                            <textarea id="description" name="description" rows="8" placeholder="Describe your CTF experience, achievements, and how you fulfill our requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="apply.js"></script>
+    <script src="recruitment.js"></script>
+</body>
+</html>
