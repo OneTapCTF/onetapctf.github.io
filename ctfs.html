@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="ctfs.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -22,7 +24,7 @@
     <main class="ctfs-section">
         <div class="container">
             <h2 class="section-title">CTF Competitions</h2>
-            
+
             <div class="ctfs-grid">
                 <div class="ctf-card" onclick="loadWriteup('ac-utv')">
                     <div class="ctf-header">
@@ -41,6 +43,38 @@
                     </div>
                     <div class="ctf-description">
                         <p>Academic CTF competition organized by UTV</p>
+                    </div>
+                    <div class="ctf-participants">
+                        <span class="participants-label">Participants:</span>
+                        <div class="participants-list">
+                            <span class="participant">varutzu</span>
+                            <span class="participant">Adi Gulin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctf-card" onclick="loadWriteup('haunted-pumpkin')">
+                    <div class="ctf-header">
+                        <h3 class="ctf-name">Haunted Pumpkin - OSINT</h3>
+                        <span class="ctf-year">2025</span>
+                    </div>
+                    <div class="ctf-stats">
+                        <div class="stat">
+                            <span class="stat-label">Points:</span>
+                            <span class="stat-value">N/A</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Placement:</span>
+                            <span class="stat-value">#84</span>
+                        </div>
+                    </div>
+                    <div class="ctf-description">
+                        <p></p>
+                    </div>
+                    <div class="ctf-participants">
+                        <span class="participants-label">Participants:</span>
+                        <div class="participants-list">
+                            <span class="participant">Adi Gulin</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,4 +98,5 @@
     <script src="script.js"></script>
     <script src="ctfs.js"></script>
 </body>
+
 </html>

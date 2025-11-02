@@ -124,6 +124,35 @@ a {
 .ctf-description {
     color: #ccc;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.ctf-participants {
+    margin-top: 1rem;
+}
+
+.participants-label {
+    color: #00bfff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.participants-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.participant {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.2), rgba(64, 224, 255, 0.1));
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 /* Modal Styles */
@@ -145,7 +174,7 @@ a {
     border: 2px solid #00bfff;
     border-radius: 15px;
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -199,6 +228,17 @@ a {
     padding-left: 1rem;
     margin: 1rem 0;
     color: #ccc;
+}
+
+#writeupContent a {
+    color: #00bfff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#writeupContent a:hover {
+    color: #40e0ff;
+    text-decoration: none;
 }
 
 /* Popup Styles */
