@@ -1,9 +1,7 @@
-// Common JavaScript functionality
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('OneTap CTF Team website loaded');
     
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', function() {
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Animate stats on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -28,12 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Observe stat items
     document.querySelectorAll('.stat-item').forEach(item => {
         observer.observe(item);
     });
     
-    // Add particle effect on mouse move
+
     document.addEventListener('mousemove', function(e) {
         createParticle(e.clientX, e.clientY);
     });
@@ -62,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Add CSS animations
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideInUp {
@@ -89,7 +84,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Smooth scrolling for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -99,7 +94,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add loading animation class
 function showLoading() {
     document.body.classList.add('loading');
 }

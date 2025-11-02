@@ -1,5 +1,3 @@
-// Apply page specific JavaScript
-
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('applicationForm');
     
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Simulate form submission
         showLoading();
         
         setTimeout(() => {
@@ -25,12 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add character counter for textarea
 document.getElementById('description').addEventListener('input', function() {
     const maxLength = 1000;
     const currentLength = this.value.length;
-    
-    // Create or update character counter
+
     let counter = document.getElementById('charCounter');
     if (!counter) {
         counter = document.createElement('div');

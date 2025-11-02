@@ -1,6 +1,5 @@
-// Recruitment management
 const recruitmentConfig = {
-    isRecruiting: true, // Set to false when not recruiting
+    isRecruiting: false, // true = active recruitment
     activeSkills: [] // Skills currently being recruited for
 };
 
@@ -11,13 +10,13 @@ function updateRecruitmentStatus() {
     const recruitmentNote = document.querySelector('.recruitment-note');
     
     if (!recruitmentConfig.isRecruiting || recruitmentConfig.activeSkills.length === 0) {
-        // No recruitment
+
         recruitmentSection.classList.add('no-recruitment');
         recruitmentTitle.textContent = 'Currently Not Recruiting';
         recruitmentTags.innerHTML = '<span class="tag inactive-recruitment">No Open Positions</span>';
         recruitmentNote.textContent = 'We are not actively recruiting at this time. Check back later!';
     } else {
-        // Active recruitment
+   
         recruitmentSection.classList.remove('no-recruitment');
         recruitmentTitle.textContent = 'Currently Recruiting For:';
         
@@ -41,5 +40,4 @@ function updateRecruitmentStatus() {
     }
 }
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', updateRecruitmentStatus);
