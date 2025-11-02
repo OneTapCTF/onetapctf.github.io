@@ -1,7 +1,7 @@
 // Recruitment management
 const recruitmentConfig = {
     isRecruiting: true, // Set to false when not recruiting
-    activeSkills: ['pwn', 'web'] // Skills currently being recruited for
+    activeSkills: [] // Skills currently being recruited for
 };
 
 function updateRecruitmentStatus() {
